@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not render any expenses with an empty argument 1`] = `
+<div>
+  <p>
+    Viewing 
+    0
+     expenses
+  </p>
+  <p>
+    No expense
+  </p>
+</div>
+`;
+
+exports[`should render ExpenseList component correctly 1`] = `
+<div>
+  <p>
+    Viewing 
+    3
+     expenses
+  </p>
+  <ExpenseListItem
+    amount={475}
+    createdAt={0}
+    description="Coffee"
+    id={1}
+    key="1"
+    note=""
+  />
+  <ExpenseListItem
+    amount={130000}
+    createdAt={-432000000}
+    description="Rent"
+    id={2}
+    key="2"
+    note=""
+  />
+  <ExpenseListItem
+    amount={50000}
+    createdAt={432000000}
+    description="Credit card"
+    id={3}
+    key="3"
+    note=""
+  />
+</div>
+`;
