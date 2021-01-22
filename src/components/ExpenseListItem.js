@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
-import { removeExpense } from '../actions/expenses'
+import moment from 'moment'
+import numeral from 'numeral'
 
 const ExpenseListItem = ({ id, description, amount, createdAt }) => (
     <div>
@@ -10,7 +10,11 @@ const ExpenseListItem = ({ id, description, amount, createdAt }) => (
             <h3>{description}</h3>
         </Link>
 
-        <p>{amount} - {createdAt}</p>
+        <p>
+            {numeral(amount / 100).format('$0,00.00')} 
+            - 
+            {moment(createdAt).format('MMMM DD, YYYY')}
+        </p>
 
     </div>
 )
