@@ -3,18 +3,7 @@
 exports[`should render ExpenseDashboardPage correctly 1`] = `
 <div>
   Expense dashboard
-  <Link
-    replace={false}
-    to="edit/42"
-  >
-    Expense 42
-  </Link>
-  <Link
-    replace={false}
-    to="edit/1024"
-  >
-    Expense 1024
-  </Link>
+  <Connect(ExpenseSummary) />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </div>

@@ -3,11 +3,6 @@
 exports[`should not render any expenses with an empty argument 1`] = `
 <div>
   <p>
-    Viewing 
-    0
-     expenses
-  </p>
-  <p>
     No expense
   </p>
 </div>
@@ -15,11 +10,6 @@ exports[`should not render any expenses with an empty argument 1`] = `
 
 exports[`should render ExpenseList component correctly 1`] = `
 <div>
-  <p>
-    Viewing 
-    3
-     expenses
-  </p>
   <ExpenseListItem
     amount={475}
     createdAt={0}
