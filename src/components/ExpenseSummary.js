@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import getExpenseTotal from '../selectors/expenses-total'
 import selectExpenses from '../selectors/expenses'
 
-
 export const ExpenseSummary = ({expensesCount, expensesTotal}) => {
     
     return (
@@ -25,7 +24,5 @@ const mapStateToProps = (state) => {
         expensesTotal: getExpenseTotal(visibleExpenses)
     }
 };
-    
-
 
 export default connect(mapStateToProps)(ExpenseSummary)
